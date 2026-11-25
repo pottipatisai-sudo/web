@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research Project Portal</title>
+
+    <link rel="stylesheet" href="practicum 14.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Research Project Portal</h1>
+        <p>Explore Innovative Research Projects</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Research Project Portal</h2>
+
+        <p>
+            Discover innovative projects, technologies
+            and research developments.
+        </p>
+    </section>
+
+    <section id="projects">
+
+        <h2>Research Projects</h2>
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search projects..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+                <option value="AI">Artificial Intelligence</option>
+                <option value="Web">Web Development</option>
+                <option value="IoT">Internet of Things</option>
+
+            </select>
+
+        </div>
+
+        <!-- PROJECT CARDS -->
+
+        <div class="project-container" id="projectContainer">
+
+            <div class="project-card" data-category="AI">
+
+                <img
+                    src="https://placehold.co/400x200/12355b/ffffff?text=Artificial+Intelligence"
+                    alt="Artificial Intelligence project"
+                >
+
+                <h3>AI Research System</h3>
+
+                <p>Artificial Intelligence</p>
+
+                <details>
+                    <summary>View Details</summary>
+                    <p>
+                        An AI-based system designed to
+                        analyze information and support
+                        intelligent decision-making.
+                    </p>
+                </details>
+
+                <button class="info-btn">
+                    More Information
+                </button>
+
+                <p class="extra-info">
+                    Technology: Python and Machine Learning.
+                </p>
+
+            </div>
+
+
+            <div class="project-card" data-category="Web">
+
+                <img
+                    src="https://placehold.co/400x200/1565c0/ffffff?text=Web+Development"
+                    alt="Web development project"
+                >
+
+                <h3>Online Research Portal</h3>
+
+                <p>Web Development</p>
+
+                <details>
+                    <summary>View Details</summary>
+                    <p>
+                        A website for displaying research
+                        projects and academic information.
+                    </p>
+                </details>
+
+                <button class="info-btn">
+                    More Information
+                </button>
+
+                <p class="extra-info">
+                    Technology: HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="project-card" data-category="IoT">
+
+                <img
+                    src="https://placehold.co/400x200/071a2b/ffffff?text=Internet+of+Things"
+                    alt="IoT research project"
+                >
+
+                <h3>Smart Monitoring System</h3>
+
+                <p>Internet of Things</p>
+
+                <details>
+                    <summary>View Details</summary>
+                    <p>
+                        An IoT-based system for monitoring
+                        connected devices and collecting data.
+                    </p>
+                </details>
+
+                <button class="info-btn">
+                    More Information
+                </button>
+
+                <p class="extra-info">
+                    Technology: Sensors and IoT devices.
+                </p>
+
+            </div>
+
+        </div>
+
+        <p id="noResults">
+            No matching projects found.
+        </p>
+
+    </section>
+
+
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Our Research Project Portal helps students
+            explore innovative ideas and technologies.
+        </p>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 Research Project Portal</p>
+    </footer>
+
+    <script src="practicum 14.js"></script>
+
+</body>
+</html>

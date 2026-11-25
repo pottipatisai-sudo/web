@@ -1,0 +1,210 @@
+
+/* BASIC STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+
+/* FLEXBOX NAVIGATION */
+
+nav {
+    background-color: #071a2b;
+    padding: 18px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.nav-links a:hover {
+    color: #64b5f6;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    background-color: #dceeff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    color: #12355b;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    background-color: #1565c0;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #071a2b;
+}
+
+
+/* PROJECT SECTION */
+
+.projects {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.projects h2 {
+    text-align: center;
+    color: #12355b;
+    margin-bottom: 25px;
+}
+
+
+/* FLEXBOX PROJECT CONTAINER */
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* PROJECT CARDS */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    flex: 1 1 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0002;
+}
+
+.card h3 {
+    color: #1565c0;
+    margin-bottom: 12px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* INFORMATION SECTIONS */
+
+.info {
+    background-color: white;
+    width: 90%;
+    margin: 25px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.info h2 {
+    color: #1565c0;
+    margin-bottom: 12px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #071a2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE NAVIGATION */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research Project Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background-color: #12355b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #0b2239;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #5ec8ff;
+        }
+
+        section {
+            padding: 35px 8%;
+        }
+
+        .intro {
+            text-align: center;
+            background-color: #dceeff;
+        }
+
+        .intro h2 {
+            color: #12355b;
+        }
+
+        article {
+            background-color: white;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #0002;
+        }
+
+        article img {
+            width: 350px;
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #12355b;
+        }
+
+        h3 {
+            color: #1565c0;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #12355b;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eef5fb;
+        }
+
+        .media-box {
+            background-color: white;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #0002;
+        }
+
+        audio,
+        video {
+            width: 100%;
+            max-width: 700px;
+            margin-top: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 350px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #1565c0;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #12355b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🔬 Research Project Portal</h1>
+        <p>Explore Innovative Research and Discoveries</p>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#researchers">Researchers</a>
+        <a href="#publications">Publications</a>
+    </nav>
+
+
+    <!-- HOME -->
+    <section id="home" class="intro">
+
+        <h2>Welcome to the Research Project Portal</h2>
+
+        <p>
+            The Research Project Portal provides information about
+            ongoing research projects conducted by students,
+            research scholars and faculty members.
+        </p>
+
+        <p>
+            Explore research objectives, project images,
+            audio presentations, demonstration videos and
+            other research resources.
+        </p>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h2>Ongoing Research Projects</h2>
+
+        <!-- ARTICLE 1 -->
+        <article>
+
+            <h2>Artificial Intelligence in Smart Agriculture</h2>
+
+            <!-- IMAGE -->
+            <img src="media/project1.jpg"
+                 alt="Smart agriculture research project">
+
+            <h3>Project Objective</h3>
+
+            <p>
+                This project uses Artificial Intelligence and
+                Machine Learning to monitor crop health and
+                improve agricultural productivity.
+            </p>
+
+            <h3>Research Areas</h3>
+
+            <ul>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Crop Monitoring</li>
+                <li>Smart Farming</li>
+            </ul>
+
+        </article>
+
+
+        <!-- ARTICLE 2 -->
+        <article>
+
+            <h2>Renewable Energy Monitoring System</h2>
+
+            <!-- IMAGE -->
+            <img src="media/project2.jpg"
+                 alt="Renewable energy monitoring project">
+
+            <h3>Project Objective</h3>
+
+            <p>
+                This project focuses on monitoring renewable
+                energy generation and improving energy efficiency.
+            </p>
+
+            <h3>Research Areas</h3>
+
+            <ul>
+                <li>Solar Energy</li>
+                <li>Wind Energy</li>
+                <li>Energy Monitoring</li>
+                <li>Internet of Things</li>
+            </ul>
+
+        </article>
+
+    </section>
+
+
+    <!-- MULTIMEDIA SECTION -->
+    <section id="multimedia">
+
+        <h2>Research Multimedia</h2>
+
+        <p>
+            This section presents multimedia information related
+            to our research projects.
+        </p>
+
+
+        <!-- AUDIO -->
+        <div class="media-box">
+
+            <h3>🎧 Research Audio Presentation</h3>
+
+            <p>
+                Listen to a short audio introduction about
+                the research project.
+            </p>
+
+            <audio controls>
+                <source src="media/research-audio.mp3"
+                        type="audio/mpeg">
+
+                Your browser does not support the audio element.
+            </audio>
+
+        </div>
+
+
+        <!-- VIDEO -->
+        <div class="media-box">
+
+            <h3>🎥 Research Demonstration Video</h3>
+
+            <p>
+                Watch the demonstration of our research project.
+            </p>
+
+            <video controls poster="media/project1.jpg">
+
+                <source src="media/research-demo.mp4"
+                        type="video/mp4">
+
+                Your browser does not support the video element.
+
+            </video>
+
+        </div>
+
+
+        <!-- IFRAME -->
+        <div class="media-box">
+
+            <h3>🌐 Embedded Research Resource</h3>
+
+            <p>
+                The following frame displays an external
+                research resource.
+            </p>
+
+            <iframe
+                src="https://www.youtube.com/embed/aircAruvnKk"
+                title="Artificial Intelligence educational video"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESEARCHERS -->
+    <section id="researchers">
+
+        <h2>Research Team</h2>
+
+        <p>
+            Our research team consists of faculty members,
+            research scholars and students working on
+            innovative solutions.
+        </p>
+
+        <ul>
+            <li>Faculty Researchers</li>
+            <li>Research Scholars</li>
+            <li>Student Researchers</li>
+            <li>Technical Assistants</li>
+        </ul>
+
+    </section>
+
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+
+        <h2>Research Publications</h2>
+
+        <table>
+
+            <tr>
+                <th>Project</th>
+                <th>Publication</th>
+                <th>Research Area</th>
+                <th>Year</th>
+            </tr>
+
+            <tr>
+                <td>Smart Agriculture</td>
+                <td>AI Based Crop Monitoring</td>
+                <td>Artificial Intelligence</td>
+                <td>2026</td>
+            </tr>
+
+            <tr>
+                <td>Renewable Energy</td>
+                <td>Energy Monitoring System</td>
+                <td>Renewable Energy</td>
+                <td>2026</td>
+            </tr>
+
+            <tr>
+                <td>Healthcare Analysis</td>
+                <td>Healthcare Data Analytics</td>
+                <td>Data Science</td>
+                <td>2026</td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <a class="button"
+           href="https://scholar.google.com/"
+           target="_blank">
+            Visit Google Scholar
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 Research Project Portal</p>
+
+        <p>Web Technology Practicum</p>
+
+    </footer>
+
+</body>
+
+</html>

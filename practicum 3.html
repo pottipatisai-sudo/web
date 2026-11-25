@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research Project Portal - Project Registration</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #12355b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin-top: 8px;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: #0b2239;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #5ec8ff;
+        }
+
+        /* INTRODUCTION */
+
+        .intro {
+            text-align: center;
+            padding: 35px 10%;
+            background-color: #dceeff;
+        }
+
+        .intro h2 {
+            color: #12355b;
+        }
+
+        /* FORM CONTAINER */
+
+        .form-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #0002;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #12355b;
+            margin-bottom: 10px;
+        }
+
+        .form-description {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* FORM ELEMENTS */
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 18px;
+            margin-bottom: 7px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #1565c0;
+            outline: none;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* RADIO AND CHECKBOX */
+
+        .option-group {
+            margin-top: 10px;
+        }
+
+        .option-group label {
+            display: inline-block;
+            font-weight: normal;
+            margin: 5px 15px 5px 0;
+        }
+
+        .option-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit {
+            background-color: #1565c0;
+            color: white;
+        }
+
+        .reset {
+            background-color: #777;
+            color: white;
+        }
+
+        .submit:hover {
+            background-color: #0b4f9c;
+        }
+
+        .reset:hover {
+            background-color: #555;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #12355b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>🔬 Research Project Portal</h1>
+
+        <p>
+            Research Project Registration and Submission
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#researchers">Researchers</a>
+
+        <a href="#registration">Register Project</a>
+
+    </nav>
+
+
+    <!-- INTRODUCTION -->
+
+    <section id="home" class="intro">
+
+        <h2>Research Project Registration</h2>
+
+        <p>
+            Researchers and students can use this form to
+            submit their research project information.
+        </p>
+
+        <p>
+            Please enter the required information carefully
+            and upload the project document if available.
+        </p>
+
+    </section>
+
+
+    <!-- REGISTRATION FORM -->
+
+    <section id="registration">
+
+        <div class="form-container">
+
+            <h2>Project Submission Form</h2>
+
+            <p class="form-description">
+                Enter your research project details below.
+            </p>
+
+
+            <form>
+
+
+                <!-- TEXT INPUT -->
+
+                <label for="name">
+                    Researcher Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                    required
+                >
+
+
+                <!-- PASSWORD -->
+
+                <label for="password">
+                    Portal Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                    minlength="6"
+                    required
+                >
+
+
+                <!-- NUMBER -->
+
+                <label for="members">
+                    Number of Researchers
+                </label>
+
+                <input
+                    type="number"
+                    id="members"
+                    name="members"
+                    min="1"
+                    max="20"
+                    placeholder="Enter number of researchers"
+                    required
+                >
+
+
+                <!-- DATE -->
+
+                <label for="date">
+                    Project Start Date
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                >
+
+
+                <!-- RADIO BUTTONS -->
+
+                <label>
+                    Research Project Status
+                </label>
+
+                <div class="option-group">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="status"
+                            value="ongoing"
+                            required
+                        >
+                        Ongoing
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="status"
+                            value="completed"
+                        >
+                        Completed
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="status"
+                            value="proposed"
+                        >
+                        Proposed
+                    </label>
+
+                </div>
+
+
+                <!-- CHECKBOXES -->
+
+                <label>
+                    Research Areas
+                </label>
+
+                <div class="option-group">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="area"
+                            value="ai"
+                        >
+                        Artificial Intelligence
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="area"
+                            value="iot"
+                        >
+                        IoT
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="area"
+                            value="datascience"
+                        >
+                        Data Science
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="area"
+                            value="robotics"
+                        >
+                        Robotics
+                    </label>
+
+                </div>
+
+
+                <!-- DROP-DOWN -->
+
+                <label for="department">
+                    Research Department
+                </label>
+
+                <select
+                    id="department"
+                    name="department"
+                    required
+                >
+
+                    <option value="">
+                        -- Select Department --
+                    </option>
+
+                    <option value="computer">
+                        Computer Science
+                    </option>
+
+                    <option value="electronics">
+                        Electronics
+                    </option>
+
+                    <option value="mechanical">
+                        Mechanical Engineering
+                    </option>
+
+                    <option value="civil">
+                        Civil Engineering
+                    </option>
+
+                    <option value="biotechnology">
+                        Biotechnology
+                    </option>
+
+                </select>
+
+
+                <!-- PROJECT TITLE -->
+
+                <label for="title">
+                    Project Title
+                </label>
+
+                <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    placeholder="Enter research project title"
+                    required
+                >
+
+
+                <!-- TEXTAREA -->
+
+                <label for="description">
+                    Project Description
+                </label>
+
+                <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Describe your research project, objectives and expected outcome..."
+                    minlength="20"
+                    required
+                ></textarea>
+
+
+                <!-- FILE INPUT -->
+
+                <label for="document">
+                    Upload Project Document
+                </label>
+
+                <input
+                    type="file"
+                    id="document"
+                    name="document"
+                    accept=".pdf,.doc,.docx"
+                >
+
+
+                <!-- BUTTONS -->
+
+                <div class="buttons">
+
+                    <button
+                        type="submit"
+                        class="submit"
+                    >
+                        Submit Project
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="reset"
+                    >
+                        Reset Form
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Research Project Portal
+        </p>
+
+        <p>
+            Web Technology Practicum 3
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

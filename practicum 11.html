@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research Project Registration</title>
+
+    <link rel="stylesheet" href="practicum 11.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Research Project Portal</h1>
+        <p>Research Project Registration Form</p>
+    </header>
+
+    <section class="container">
+
+        <h2>Register Your Research Project</h2>
+
+        <form id="projectForm">
+
+            <fieldset>
+
+                <legend>Student Information</legend>
+
+                <label>Student Name</label>
+                <input type="text" id="name"
+                       placeholder="Enter your full name"
+                       minlength="3"
+                       maxlength="30"
+                       pattern="[A-Za-z ]+"
+                       required>
+
+                <label>Email Address</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <label>Password</label>
+                <input type="password" id="password"
+                       placeholder="Enter password"
+                       minlength="8"
+                       required>
+
+                <label>Age</label>
+                <input type="number" id="age"
+                       min="18" max="35"
+                       placeholder="Enter your age"
+                       required>
+
+                <label>Registration Date</label>
+                <input type="date" id="date"
+                       required>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Project Information</legend>
+
+                <label>Project Category</label>
+
+                <select id="category" required>
+
+                    <option value="">Select Category</option>
+                    <option value="AI">Artificial Intelligence</option>
+                    <option value="Energy">Renewable Energy</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Robotics">Robotics</option>
+
+                </select>
+
+                <label>Project Title</label>
+
+                <input type="text" id="title"
+                       placeholder="Enter project title"
+                       minlength="5"
+                       maxlength="50"
+                       required>
+
+                <label>Project Description</label>
+
+                <textarea id="description"
+                          placeholder="Describe your research project"
+                          minlength="20"
+                          maxlength="300"
+                          required></textarea>
+
+            </fieldset>
+
+            <button type="submit">Submit Registration</button>
+
+            <button type="reset" class="resetBtn">
+                Reset Form
+            </button>
+
+            <p id="message"></p>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Research Project Portal</p>
+    </footer>
+
+    <script src="practicum 11.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    color: #222;
+}
+
+/* HEADER */
+
+header {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* FORM CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+h2 {
+    text-align: center;
+    color: #1565c0;
+    margin-bottom: 25px;
+}
+
+/* FIELDSET */
+
+fieldset {
+    border: 1px solid #b5cce5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #1565c0;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* LABELS */
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* INPUTS */
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* FOCUS EFFECT */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #1565c0;
+}
+
+/* VALIDATION STYLING */
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #e53935;
+}
+
+input:valid:not(:placeholder-shown) {
+    border-color: #2e7d32;
+}
+
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+/* BUTTONS */
+
+button {
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #071a2b;
+}
+
+.resetBtn {
+    background-color: #777;
+}
+
+/* MESSAGE */
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #071a2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        padding: 18px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}

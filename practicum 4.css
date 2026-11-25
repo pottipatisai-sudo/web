@@ -1,0 +1,205 @@
+
+/* BASIC STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background-color: #071a2b;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #64b5f6;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    background-color: #dceeff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    color: #12355b;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+}
+
+
+/* PROJECT SECTION */
+
+.projects {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.projects h2 {
+    text-align: center;
+    color: #12355b;
+    margin-bottom: 25px;
+}
+
+
+/* PROJECT CONTAINER */
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/* PROJECT CARDS */
+
+.card {
+    background-color: white;
+    width: 33.33%;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0002;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #1565c0;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #1565c0;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #071a2b;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    background-color: white;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.about h2 {
+    color: #1565c0;
+    margin-bottom: 12px;
+}
+
+
+/* CONTACT SECTION */
+
+.contact {
+    background-color: #dceeff;
+    text-align: center;
+    padding: 30px;
+}
+
+.contact h2 {
+    color: #12355b;
+    margin-bottom: 12px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #071a2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* RESPONSIVE LAYOUT */
+
+@media (max-width: 700px) {
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}

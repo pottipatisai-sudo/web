@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research Project Task Manager</title>
+
+    <link rel="stylesheet" href="practicum 13.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Research Project Portal</h1>
+        <p>Task Management System</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#add-task">Add Task</a>
+        <a href="#task-list">Task List</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Task Manager</h2>
+        <p>
+            Manage your research projects and daily tasks
+            easily using this application.
+        </p>
+    </section>
+
+    <section id="add-task">
+
+        <h2>Add / Update Task</h2>
+
+        <form id="taskForm">
+
+            <input type="hidden" id="editIndex">
+
+            <label>Task Title</label>
+            <input
+                type="text"
+                id="taskTitle"
+                placeholder="Enter task title"
+                required
+            >
+
+            <label>Description</label>
+            <textarea
+                id="taskDescription"
+                placeholder="Enter task description"
+                required
+            ></textarea>
+
+            <label>Priority</label>
+            <select id="taskPriority" required>
+                <option value="">Select Priority</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+
+            <label>Status</label>
+            <select id="taskStatus">
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <button type="submit" id="submitBtn">
+                Add Task
+            </button>
+
+            <button type="reset" id="resetBtn">
+                Clear
+            </button>
+
+        </form>
+
+    </section>
+
+    <section id="task-list">
+
+        <h2>My Tasks</h2>
+
+        <input
+            type="text"
+            id="searchTask"
+            placeholder="Search tasks..."
+        >
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="taskTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p id="message"></p>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Research Project Portal</p>
+    </footer>
+
+    <script src="practicum 13.js"></script>
+
+</body>
+</html>

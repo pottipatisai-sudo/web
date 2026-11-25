@@ -1,0 +1,198 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    color: #222;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* HEADER */
+
+header {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #071a2b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #64b5f6;
+}
+
+/* SECTIONS */
+
+section {
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #0002;
+    transition: 0.4s;
+}
+
+h2 {
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+/* PROJECT CARDS */
+
+.project-card {
+    background-color: #eef3f8;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 5px solid #1565c0;
+}
+
+/* SETTINGS */
+
+.setting-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#status {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+/* CUSTOM TOGGLE SWITCH */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #aaa;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* CHECKED STATE */
+
+.switch input:checked + .slider {
+    background-color: #1565c0;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(30px);
+}
+
+/* DARK MODE */
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode section {
+    background-color: #242424;
+    color: white;
+}
+
+body.dark-mode h2 {
+    color: #64b5f6;
+}
+
+body.dark-mode .project-card {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .setting-box {
+    border-color: #555;
+}
+
+body.dark-mode #status {
+    color: #64b5f6;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #071a2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .setting-box {
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+}
